@@ -9,10 +9,9 @@ export const Item = (props) => {
   return (
     <div className='item' >
         <input type={'checkbox'} onClick={handleChecked}/>
-        {/* <input type="checkbox" /> */}
-        {/* <label htmlFor="">{props}</label> */}
-        <label>{isChecked ? <del>{props}</del> : props }</label>
+        {/* <input type="checkbox" />
+        <label htmlFor="">{props}</label> */}
+        <label>{isChecked ? props : <del>{props}</del>}</label>
     </div>
   );
 };
-
